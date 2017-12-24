@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1513690281 source:c:\users\reminiscence\desktop\shop\main.cpp
+	<iostream>
+	<time.h>
+	"Pplatform.h"
+
+1513757952 source:c:\users\reminiscence\desktop\shop\src\pproduct.cpp
+	"Pproduct.h"
+	<time.h>
+
+1513682780 c:\users\reminiscence\desktop\shop\include\pproduct.h
+	<iostream>
+	<map>
+	<string>
+	<vector>
+
+1513774724 source:c:\users\reminiscence\desktop\shop\src\puser.cpp
+	"Puser.h"
+
+1512811768 c:\users\reminiscence\desktop\shop\include\puser.h
+	<iostream>
+	<string>
+	<vector>
+	<time.h>
+
+1513759979 source:c:\users\reminiscence\desktop\shop\src\pplatform.cpp
+	"Pplatform.h"
+	<sstream>
+	<fstream>
+
+1513687554 c:\users\reminiscence\desktop\shop\include\pplatform.h
+	"Pproduct.h"
+	"Puser.h"
+	<string>
+	<vector>
+	<iostream>
+	<time.h>
+
