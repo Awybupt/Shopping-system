@@ -4,44 +4,43 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <time.h>
+#include <time.h>//用于生成记录的时候调用当前时间
 
 using namespace std;
 
-
-class Puser
+class Puser//用户类
 {
     public:
-        Puser();
-        Puser(string na,string id,string ba,string ad,string pa);
-        virtual ~Puser();
-        void changename(string newname);
-        void changeid(string newid);
-        void changebankid(string newbankid);
-        void changeaddition(string newaddition);
-        void changepassword(string newpassword);
-        string getPuname();
-        string getPuid();
-        string getPubankid();
-        string getPuaddition();
-        string getpassword();
+        Puser();//无参数构造函数
+        Puser(string na,string id,string ba,string ad,string pa);//有参数构造函数
+        virtual ~Puser();//析构函数
+        void changename(string newname);//改变名字
+        void changeid(string newid);//改变id
+        void changebankid(string newbankid);//改变银行账户ud
+        void changeaddition(string newaddition);//改变附加信息
+        void changepassword(string newpassword);//改变密码
+        string getPuname();//得到名字
+        string getPuid();//得到id
+        string getPubankid();//得到银行id
+        string getPuaddition();//得到附加信息
+        string getpassword();//得到密码
     private:
-        string Puname;
-        string Puid;
-        string PuBankid;
-        string Puaddition;
-        string Pupassword;
+        string Puname;//名字
+        string Puid;//id
+        string PuBankid;//yinhangid
+        string Puaddition;//附加信息
+        string Pupassword;//密码
 };
-class customer:public Puser
+class customer:public Puser//顾客
 {
 private:
-    vector <string> Pulike;
+    vector <string> Pulike;//喜欢列表
 public:
-    customer(vector <string> &li,string na,string id,string ba,string ad,string pa);
+    customer(vector <string> &li,string na,string id,string ba,string ad,string pa);//构造函数
     ~customer();
-    void addlike(string productid);
-    void deletelike(string productid);
-    void getPulike(vector <string> &ans);
+    void addlike(string productid);//对于单个用户的添加喜欢功能
+    void deletelike(string productid);//删除喜欢
+    void getPulike(vector <string> &ans);//得到喜欢vector
 };
 
 #endif // PUSER_H

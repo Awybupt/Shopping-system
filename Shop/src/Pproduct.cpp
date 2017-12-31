@@ -98,17 +98,17 @@ food类，方法的实现
 */
 void Pfood::show()
 {
-    cout<<this->getname()<<"\t"<<this->getnumber()<<"\t"<<this->getPrice()<<"id:"<<this->getid()<<endl;
+    cout<<this->getname()<<"\t"<<this->getnumber()<<"\t"<<this->getPrice()<<"\tid:"<<this->getid()<<endl;
 }
 
 void Pclother::show()
 {
-    cout<<this->getname()<<"\t"<<this->getnumber()<<"\t"<<this->getPrice()<<"id:"<<this->getid()<<endl;
+    cout<<this->getname()<<"\t"<<this->getnumber()<<"\t"<<this->getPrice()<<"\tid:"<<this->getid()<<endl;
 }
 
 void Pbook::show()
 {
-    cout<<this->getname()<<"\t"<<this->getnumber()<<"\t"<<this->getPrice()<<"id:"<<this->getid()<<endl;
+    cout<<this->getname()<<"\t"<<this->getnumber()<<"\t"<<this->getPrice()<<"\tid:"<<this->getid()<<endl;
 }
 
 Pfood::Pfood(int p,int t,double fs,double pp,string n,int nu,string d,string id):Pproduct(pp,n,nu,d,id)
